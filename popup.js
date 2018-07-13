@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var tab = tabs[0];
     var obj = document.getElementById('copied');
     chrome.storage.sync.get({
-      customFormat: '[${title}](${url})',
+      customFormat: '[[${url}|${title}]]',
     }, function (options) {
       document.getElementById('title').innerHTML = tab.title;
       document.getElementById('url').innerHTML = tab.url;
